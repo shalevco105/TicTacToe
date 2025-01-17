@@ -10,17 +10,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class GameMenuLogic extends AppCompatActivity {
 
-    private Button withAFriendBtn;
-    private Button startGameButton;
-
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         setTheme(R.style.AppTheme);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game_start);
 
-        withAFriendBtn = findViewById(R.id.btn_start);
-        startGameButton = findViewById(R.id.start_game_button);
+        Button withAFriendBtn = findViewById(R.id.btn_start);
+        Button startGameButton = findViewById(R.id.start_game_button);
 
         withAFriendBtn.setOnClickListener(new View.OnClickListener() {
             @Override
